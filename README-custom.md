@@ -56,5 +56,35 @@ xxx是版本号
 3） (arch -arm64) pod install --repo-update
 4）将 build/trustwalletcore.aar 文件拷贝到 bitverse项目的android/libs目录下 和 trust_wallet项目的 android/libs目录下
 
+## 链补充
+链不存在
+bitgert    10032520
+bitlayer   10200901
+zigchain   20006868
+yymm       20005858
+hyperevm   10000999
+goerli     10000005
+bitcointestnet 20000001
+mantletestnet 10005001
+mantlesepoliatestnet    10005003
+sepolia  11155111
+avalanchefujitestnet  10043113
+merlintestnet  10686868
+blasttestnet 168587773
+yymmtestnet  20585858
+yymmdevnet   21585858
+bitlayertestnet 10200810
+solanadevnet 502    (暂时没有用到)
+hyperevmtestnet 10000998
+pharos    10001672
+pharostestnet 10688688
+pharosatlantictestnet 10688689
+
+链冲突
+mantle   10005000
+merlin   10004200
+blast    100081457
+btc      1
+
 
 

@@ -4974,5 +4974,626 @@
       "rpc": "https://mainnet.megaeth.com/rpc",
       "documentation": "https://docs.megaeth.com"
     }
+  },
+  {
+    "id": "bitgert",
+    "name": "Bitgert",
+    "coinId": 10032520,
+    "symbol": "BRISE",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "32520",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://brisescan.com",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x0247f616cb1d371fa45384da06c0fe70442676fad75773a3f808d03cc761417a",
+      "sampleAccount": "0x5f30eD8C6623BAFF9B4f73DDC8Cd524E7E99Ce85"
+    },
+    "info": {
+      "url": "https://bitgert.com",
+      "source": "https://github.com/bitgert",
+      "rpc": "https://dedicated.brisescan.com",
+      "documentation": "https://bitgert.zendesk.com/hc/en-us"
+    }
+  },
+  {
+    "id": "bitlayer",
+    "name": "Bitlayer Mainnet",
+    "coinId": 10200901,
+    "symbol": "BTC",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "200901",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://www.btrscan.com",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://bitlayer.org/",
+      "source": "https://github.com/bitlayer-org/bitlayer-l2.git",
+      "rpc": "https://rpc.bitlayer.org",
+      "documentation": "https://docs.bitlayer.org"
+    }
+  },
+  {
+    "id": "zigchain",
+    "name": "ZIGChain",
+    "displayName": "ZIGChain",
+    "coinId": 20006868,
+    "symbol": "ZIG",
+    "decimals": 6,
+    "chainId": "zigchain-1",
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/118'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "hrp": "zig",
+    "addressHasher": "sha256ripemd",
+    "explorer": {
+      "url": "https://www.zigscan.org",
+      "txPath": "/tx/",
+      "accountPath": "/account/",
+      "sampleTx": "D6757020EC185410D0073C4D3140544DB2174C95871BB8863A55E3010A269524",
+      "sampleAccount": "zig19786dunggq5090jvxy3pz6fc8hugjg5f2tg60y"
+    },
+    "info": {
+      "url": "https://zigchain.com",
+      "source": "https://github.com/zigchain",
+      "rpc": "https://rpc.zigchain.com",
+      "documentation": "https://docs.zigchain.com"
+    }
+  },
+  {
+    "id": "yymm",
+    "name": "Yymm",
+    "displayName": "YYMM",
+    "coinId": 20005858,
+    "symbol": "BV",
+    "decimals": 18,
+    "chainId": "yymm_5858-1",
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "hrp": "yymm",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://mintscan.io/cosmos",
+      "txPath": "/txs/",
+      "accountPath": "/account/",
+      "sampleTx": "F236222E4F7C92FA84711FD6451ED22DD56CBDFA319BFDAFB99A21E4E9B9EC2F",
+      "sampleAccount": "yymm1adl7usw7z2dnysyn7wvrghu0u0q6gr7jqs4gtt"
+    },
+    "info": {
+      "url": "https://bitverse.zone",
+      "source": "https://github.com/cosmos/cosmos-sdk",
+      "rpc": "https://node.bitverse-dev.bitverse.zone",
+      "documentation": "https://bitverse.zone"
+    }
+  },
+  {
+    "id": "hyperevm",
+    "name": "HyperEVM",
+    "coinId": 10000999,
+    "symbol": "HYPE",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "999",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://app.hyperliquid.xyz/explorer",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x557ed1b7d620f69161f90423be0d1e0000ae1eff8e61ec9c363fbcf6a5d45f7d",
+      "sampleAccount": "0x9db9cd2b0e40c139b487752ee13586956fbe626a"
+    },
+    "info": {
+      "url": "https://hyperliquid.gitbook.io/",
+      "source": "https://github.com/HyperDevCommunity/AwesomeHyperEVM",
+      "rpc": "https://rpc.hyperliquid.xyz/evm",
+      "documentation": "https://hyperliquid.gitbook.io/"
+    }
+  },
+  {
+    "id": "goerli",
+    "name": "Goerli",
+    "coinId": 10000005,
+    "symbol": "ETH",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "5",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://goerli.etherscan.io",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "0x9edaf0f7d9c6629c31bbf0471fc07d696c73b566b93783f7e25d8d5d2b62fa4f",
+      "sampleAccount": "0x5bb497e8d9fe26e92dd1be01e32076c8e024d167"
+    },
+    "info": {
+      "url": "https://ethereum.org",
+      "source": "https://github.com/ethereum/go-ethereum",
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "documentation": "https://eth.wiki/json-rpc/API"
+    }
+  },
+  {
+    "id": "bitcointestnet",
+    "name": "Bitcoin Testnet",
+    "coinId": 20000001,
+    "symbol": "BTC",
+    "decimals": 8,
+    "blockchain": "Bitcoin",
+    "derivation": [
+      {
+        "name": "segwit",
+        "path": "m/84'/1'/0'/0/0",
+        "xpub": "zpub",
+        "xprv": "zprv"
+      },
+      {
+        "name": "legacy",
+        "path": "m/44'/1'/0'/0/0",
+        "xpub": "xpub",
+        "xprv": "xprv"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "p2pkhPrefix": 111,
+    "p2shPrefix": 196,
+    "hrp": "tb",
+    "publicKeyHasher": "sha256ripemd",
+    "base58Hasher": "sha256d",
+    "explorer": {
+      "url": "https://blockchair.com",
+      "txPath": "/bitcoin/testnet/transaction/",
+      "accountPath": "/bitcoin/testnet/address/",
+      "sampleTx": "2628679656093f062455ba9c34e10d60b6da01e7336e0d0df3b817d9a7dda23b",
+      "sampleAccount": "tb1qks8l9haxjszn9r6yf2dm65ed3w6wmz85r379ms"
+    },
+    "info": {
+      "url": "https://bitcoin.org",
+      "source": "https://github.com/trezor/blockbook",
+      "rpc": "",
+      "documentation": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+    }
+  },
+  {
+    "id": "mantletestnet",
+    "name": "Mantle Testnet",
+    "coinId": 10005001,
+    "symbol": "MNT",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "5001",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://explorer.testnet.mantle.xyz",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://www.mantle.xyz/",
+      "source": "https://github.com/mantlenetworkio",
+      "rpc": "https://rpc.testnet.mantle.xyz",
+      "documentation": "https://docs.mantle.xyz/"
+    }
+  },
+  {
+    "id": "mantlesepoliatestnet",
+    "name": "Mantle Sepolia Testnet",
+    "coinId": 10005003,
+    "symbol": "MNT",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "5003",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://explorer.sepolia.mantle.xyz",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://www.mantle.xyz/",
+      "source": "https://github.com/mantlenetworkio",
+      "rpc": "https://rpc.sepolia.mantle.xyz",
+      "documentation": "https://docs.mantle.xyz/"
+    }
+  },
+  {
+    "id": "sepolia",
+    "name": "Sepolia Testnet",
+    "coinId": 11155111,
+    "symbol": "ETH",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "11155111",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://sepolia.etherscan.io",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://ethereum.org/",
+      "source": "GitHub - ethereum/go-ethereum: Go implementation of the Ethereum protocol",
+      "rpc": "https://mainnet.infura.io",
+      "documentation": "https://eth.wiki/json-rpc/API"
+    }
+  },
+  {
+    "id": "avalanchefujitestnet",
+    "name": "Avalanche Fuji Testnet",
+    "coinId": 10043113,
+    "symbol": "AVAX",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "43113",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://testnet.snowtrace.io",
+      "txPath": "/tx/",
+      "accountPath": "/address/",
+      "sampleTx": "0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54",
+      "sampleAccount": "0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A"
+    },
+    "info": {
+      "url": "https://www.avalabs.org/",
+      "client": "https://github.com/ava-labs/avalanchego",
+      "clientPublic": "https://api.avax-test.network/ext/bc/C/rpc",
+      "clientDocs": "https://docs.avax.network/"
+    },
+    "testFolderName": "Avalanche"
+  },
+  {
+    "id": "merlintestnet",
+    "name": "Merlin Testnet",
+    "coinId": 10686868,
+    "symbol": "BTC",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "686868",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://testnet-scan.merlinchain.io",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://merlinchain.io/",
+      "source": "https://github.com/merlin",
+      "rpc": "https://testnet-rpc.merlinchain.io",
+      "documentation": "https://docs.merlinchain.io/merlin-docs/"
+    }
+  },
+  {
+    "id": "blasttestnet",
+    "name": "BlastTestnetSepolia",
+    "coinId": 168587773,
+    "symbol": "ETH",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "168587773",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://testnet.blastscan.io",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x744ec6390988dacff34e813c814b1ca073e81409d13a418e0ab6d875b22d3ee8",
+      "sampleAccount": "0x39abb33adb442aab80dac6dc37db2814816df22c"
+    },
+    "info": {
+      "url": "https://blastscan.io/",
+      "source": "https://github.com/BLASTchain",
+      "rpc": "https://sepolia.blast.io",
+      "documentation": "https://github.com/BLASTchain/blast"
+    }
+  },
+  {
+    "id": "yymmtestnet",
+    "name": "YymmTestnet",
+    "displayName": "YYMM Testnet Chain",
+    "coinId": 20585858,
+    "symbol": "BV",
+    "decimals": 18,
+    "chainId": "yymm_585858-1",
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "hrp": "yymm",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://mintscan.io/cosmos",
+      "txPath": "/txs/",
+      "accountPath": "/account/",
+      "sampleTx": "F236222E4F7C92FA84711FD6451ED22DD56CBDFA319BFDAFB99A21E4E9B9EC2F",
+      "sampleAccount": "yymm1adl7usw7z2dnysyn7wvrghu0u0q6gr7jqs4gtt"
+    },
+    "info": {
+      "url": "https://bitverse.zone",
+      "source": "https://github.com/cosmos/cosmos-sdk",
+      "rpc": "https://node.bitverse-dev.bitverse.zone",
+      "documentation": "https://bitverse.zone"
+    }
+  },
+  {
+    "id": "yymmdevnet",
+    "name": "YymmDevnet",
+    "displayName": "YYMM Devnet Chain",
+    "coinId": 21585858,
+    "symbol": "BV",
+    "decimals": 18,
+    "chainId": "yymmchain_585858-1",
+    "blockchain": "Cosmos",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "hrp": "yymm",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://mintscan.io/cosmos",
+      "txPath": "/txs/",
+      "accountPath": "/account/",
+      "sampleTx": "F236222E4F7C92FA84711FD6451ED22DD56CBDFA319BFDAFB99A21E4E9B9EC2F",
+      "sampleAccount": "yymm1adl7usw7z2dnysyn7wvrghu0u0q6gr7jqs4gtt"
+    },
+    "info": {
+      "url": "https://bitverse.zone",
+      "source": "https://github.com/cosmos/cosmos-sdk",
+      "rpc": "https://node.bitverse-dev.bitverse.zone",
+      "documentation": "https://bitverse.zone"
+    }
+  },
+  {
+    "id": "bitlayertestnet",
+    "name": "Bitlayer Testnet",
+    "coinId": 10200810,
+    "symbol": "BTC",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "200810",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://testnet-scan.bitlayer.org",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0xf97eebc08c4ccd940320fa1813c6de615bbdee111254ea799302df81722fd154",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://bitlayer.org/",
+      "source": "https://github.com/bitlayer-org/bitlayer-l2.git",
+      "rpc": "https://testnet-rpc.bitlayer.org",
+      "documentation": "https://docs.bitlayer.org"
+    }
+  },
+  {
+    "id": "hyperevmtestnet",
+    "name": "HyperEVM Testnet",
+    "coinId": 10000998,
+    "symbol": "HYPE",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "998",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://app.hyperliquid-testnet.xyz/explorer",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x557ed1b7d620f69161f90423be0d1e0000ae1eff8e61ec9c363fbcf6a5d45f7d",
+      "sampleAccount": "0x9db9cd2b0e40c139b487752ee13586956fbe626a"
+    },
+    "info": {
+      "url": "https://hyperliquid.gitbook.io/",
+      "source": "https://github.com/HyperDevCommunity/AwesomeHyperEVM",
+      "rpc": "https://rpc.hyperliquid-testnet.xyz/evm",
+      "documentation": "https://hyperliquid.gitbook.io/"
+    }
+  },
+  {
+    "id": "pharos",
+    "name": "Pharos",
+    "coinId": 10001672,
+    "symbol": "PROS",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "1672",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://pharosscan.xyz",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x83696ade8e93dc0148836f36bcb1922da093f8b864d58530c6d7fc5b94044e83",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://pharosnetwork.xyz/",
+      "source": "https://github.com/PharosNetwork",
+      "rpc": "https://api.zan.top/node/v1/pharos/mainnet",
+      "documentation": "https://docs.pharosnetwork.xyz"
+    }
+  },
+  {
+    "id": "pharostestnet",
+    "name": "Pharos Testnet",
+    "coinId": 10688688,
+    "symbol": "PHRS",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "688688",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://testnet.pharosscan.xyz",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x83696ade8e93dc0148836f36bcb1922da093f8b864d58530c6d7fc5b94044e83",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://pharosnetwork.xyz/",
+      "source": "https://github.com/PharosNetwork",
+      "rpc": "https://testnet.dplabs-internal.com",
+      "documentation": "https://docs.pharosnetwork.xyz"
+    }
+  },
+  {
+    "id": "pharosatlantictestnet",
+    "name": "Pharos Atlantic Testnet",
+    "coinId": 10688689,
+    "symbol": "PHRS",
+    "decimals": 18,
+    "blockchain": "Ethereum",
+    "derivation": [
+      {
+        "path": "m/44'/60'/0'/0/0"
+      }
+    ],
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1Extended",
+    "chainId": "688689",
+    "addressHasher": "keccak256",
+    "explorer": {
+      "url": "https://atlantic.pharosscan.xyz",
+      "txPath": "/tx",
+      "accountPath": "/address/",
+      "sampleTx": "0x83696ade8e93dc0148836f36bcb1922da093f8b864d58530c6d7fc5b94044e83",
+      "sampleAccount": "0xCc23091DE47a988DCB1ac8b0a80B49A14fe0A4ab"
+    },
+    "info": {
+      "url": "https://pharosnetwork.xyz/",
+      "source": "https://github.com/PharosNetwork",
+      "rpc": "https://atlantic.dplabs-internal.com",
+      "documentation": "https://docs.pharosnetwork.xyz"
+    }
   }
 ]
