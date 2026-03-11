@@ -2,7 +2,7 @@
   {
     "id": "bitcoin",
     "name": "Bitcoin",
-    "coinId": 0,
+    "coinId": 1,
     "symbol": "BTC",
     "decimals": 8,
     "blockchain": "Bitcoin",
@@ -419,7 +419,7 @@
   {
     "id": "mantle",
     "name": "Mantle",
-    "coinId": 5000,
+    "coinId": 10005000,
     "symbol": "MNT",
     "decimals": 18,
     "blockchain": "Ethereum",
@@ -4645,7 +4645,7 @@
   {
     "id": "merlin",
     "name": "Merlin",
-    "coinId": 4200,
+    "coinId": 10004200,
     "symbol": "BTC",
     "decimals": 18,
     "blockchain": "Ethereum",
@@ -4706,7 +4706,7 @@
   {
     "id": "blast",
     "name": "Blast",
-    "coinId": 81457,
+    "coinId": 100081457,
     "symbol": "ETH",
     "decimals": 18,
     "blockchain": "Ethereum",
