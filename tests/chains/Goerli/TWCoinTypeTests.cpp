@@ -11,25 +11,25 @@
 #include <gtest/gtest.h>
 
 
-TEST(TWAvalancheFujiTestnetCoinType, TWCoinType) {
-    const auto coin = TWCoinTypeAvalancheFujiTestnet;
+TEST(TWGoerliCoinType, TWCoinType) {
+    const auto coin = TWCoinTypeGoerli;
     const auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(coin));
     const auto id = WRAPS(TWCoinTypeConfigurationGetID(coin));
     const auto name = WRAPS(TWCoinTypeConfigurationGetName(coin));
     const auto chainId = WRAPS(TWCoinTypeChainId(coin));
-    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54"));
+    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("0x9edaf0f7d9c6629c31bbf0471fc07d696c73b566b93783f7e25d8d5d2b62fa4f"));
     const auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(coin, txId.get()));
-    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A"));
+    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("0x5bb497e8d9fe26e92dd1be01e32076c8e024d167"));
     const auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(coin, accId.get()));
 
-    assertStringsEqual(id, "avalanchefujitestnet");
-    assertStringsEqual(name, "AvalancheFujiTestnet");
-    assertStringsEqual(symbol, "AVAX");
+    assertStringsEqual(id, "goerli");
+    assertStringsEqual(name, "Goerli");
+    assertStringsEqual(symbol, "ETH");
     ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(coin), 18);
     ASSERT_EQ(TWCoinTypeBlockchain(coin), TWBlockchainEthereum);
     ASSERT_EQ(TWCoinTypeP2shPrefix(coin), 0x0);
     ASSERT_EQ(TWCoinTypeStaticPrefix(coin), 0x0);
-    assertStringsEqual(chainId, "43113");
-    assertStringsEqual(txUrl, "https://testnet.snowtrace.io/tx/0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54");
-    assertStringsEqual(accUrl, "https://testnet.snowtrace.io/address/0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A");
+    assertStringsEqual(chainId, "5");
+    assertStringsEqual(txUrl, "https://goerli.etherscan.io/tx/0x9edaf0f7d9c6629c31bbf0471fc07d696c73b566b93783f7e25d8d5d2b62fa4f");
+    assertStringsEqual(accUrl, "https://goerli.etherscan.io/address/0x5bb497e8d9fe26e92dd1be01e32076c8e024d167");
 }

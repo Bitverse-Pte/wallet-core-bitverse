@@ -193,6 +193,26 @@ enum TWCoinType {
     TWCoinTypeMonad = 10143,
     TWCoinTypeMegaETH = 4326,
     // end_of_tw_coin_type_marker_do_not_modify
+    TWCoinTypeBitgert = 10032520,
+    TWCoinTypeBitlayerMainnet = 10200901,
+    TWCoinTypeHyperEVM = 10000999,
+    TWCoinTypeGoerli = 10000005,
+    TWCoinTypeBitcoinTestnet = 20000001,
+    TWCoinTypeMantleTestnet = 10005001,
+    TWCoinTypeMantleSepoliaTestnet = 10005003,
+    TWCoinTypeSepoliaTestnet = 11155111,
+    TWCoinTypeAvalancheFujiTestnet = 10043113,
+    TWCoinTypeMerlinTestnet = 10686868,
+    TWCoinTypeBlastTestnetSepolia = 168587773,
+    TWCoinTypeBitlayerTestnet = 10200810,
+    TWCoinTypeHyperEVMTestnet = 10000998,
+    TWCoinTypePharos = 10001672,
+    TWCoinTypePharosTestnet = 10688688,
+    TWCoinTypePharosAtlanticTestnet = 10688689,
+    TWCoinTypeZIGChain = 20006868,
+    TWCoinTypeYymm = 20005858,
+    TWCoinTypeYymmTestnet = 20585858,
+    TWCoinTypeYymmDevnet = 21585858,
 };
 
 /// Returns the blockchain for a coin type.

@@ -11,25 +11,25 @@
 #include <gtest/gtest.h>
 
 
-TEST(TWAvalancheFujiTestnetCoinType, TWCoinType) {
-    const auto coin = TWCoinTypeAvalancheFujiTestnet;
+TEST(TWYymmCoinType, TWCoinType) {
+    const auto coin = TWCoinTypeYymm;
     const auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(coin));
     const auto id = WRAPS(TWCoinTypeConfigurationGetID(coin));
     const auto name = WRAPS(TWCoinTypeConfigurationGetName(coin));
     const auto chainId = WRAPS(TWCoinTypeChainId(coin));
-    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54"));
+    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("F236222E4F7C92FA84711FD6451ED22DD56CBDFA319BFDAFB99A21E4E9B9EC2F"));
     const auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(coin, txId.get()));
-    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A"));
+    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("yymm1adl7usw7z2dnysyn7wvrghu0u0q6gr7jqs4gtt"));
     const auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(coin, accId.get()));
 
-    assertStringsEqual(id, "avalanchefujitestnet");
-    assertStringsEqual(name, "AvalancheFujiTestnet");
-    assertStringsEqual(symbol, "AVAX");
+    assertStringsEqual(id, "yymm");
+    assertStringsEqual(name, "YYMM");
+    assertStringsEqual(symbol, "BV");
     ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(coin), 18);
-    ASSERT_EQ(TWCoinTypeBlockchain(coin), TWBlockchainEthereum);
+    ASSERT_EQ(TWCoinTypeBlockchain(coin), TWBlockchainCosmos);
     ASSERT_EQ(TWCoinTypeP2shPrefix(coin), 0x0);
     ASSERT_EQ(TWCoinTypeStaticPrefix(coin), 0x0);
-    assertStringsEqual(chainId, "43113");
-    assertStringsEqual(txUrl, "https://testnet.snowtrace.io/tx/0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54");
-    assertStringsEqual(accUrl, "https://testnet.snowtrace.io/address/0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A");
+    assertStringsEqual(chainId, "yymm_5858-1");
+    assertStringsEqual(txUrl, "https://mintscan.io/cosmos/txs/F236222E4F7C92FA84711FD6451ED22DD56CBDFA319BFDAFB99A21E4E9B9EC2F");
+    assertStringsEqual(accUrl, "https://mintscan.io/cosmos/account/yymm1adl7usw7z2dnysyn7wvrghu0u0q6gr7jqs4gtt");
 }

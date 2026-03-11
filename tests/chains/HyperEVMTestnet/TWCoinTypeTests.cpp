@@ -11,25 +11,25 @@
 #include <gtest/gtest.h>
 
 
-TEST(TWAvalancheFujiTestnetCoinType, TWCoinType) {
-    const auto coin = TWCoinTypeAvalancheFujiTestnet;
+TEST(TWHyperEVMTestnetCoinType, TWCoinType) {
+    const auto coin = TWCoinTypeHyperEVMTestnet;
     const auto symbol = WRAPS(TWCoinTypeConfigurationGetSymbol(coin));
     const auto id = WRAPS(TWCoinTypeConfigurationGetID(coin));
     const auto name = WRAPS(TWCoinTypeConfigurationGetName(coin));
     const auto chainId = WRAPS(TWCoinTypeChainId(coin));
-    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54"));
+    const auto txId = WRAPS(TWStringCreateWithUTF8Bytes("0x557ed1b7d620f69161f90423be0d1e0000ae1eff8e61ec9c363fbcf6a5d45f7d"));
     const auto txUrl = WRAPS(TWCoinTypeConfigurationGetTransactionURL(coin, txId.get()));
-    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A"));
+    const auto accId = WRAPS(TWStringCreateWithUTF8Bytes("0x9db9cd2b0e40c139b487752ee13586956fbe626a"));
     const auto accUrl = WRAPS(TWCoinTypeConfigurationGetAccountURL(coin, accId.get()));
 
-    assertStringsEqual(id, "avalanchefujitestnet");
-    assertStringsEqual(name, "AvalancheFujiTestnet");
-    assertStringsEqual(symbol, "AVAX");
+    assertStringsEqual(id, "hyperevmtestnet");
+    assertStringsEqual(name, "HyperEVMTestnet");
+    assertStringsEqual(symbol, "HYPE");
     ASSERT_EQ(TWCoinTypeConfigurationGetDecimals(coin), 18);
     ASSERT_EQ(TWCoinTypeBlockchain(coin), TWBlockchainEthereum);
     ASSERT_EQ(TWCoinTypeP2shPrefix(coin), 0x0);
     ASSERT_EQ(TWCoinTypeStaticPrefix(coin), 0x0);
-    assertStringsEqual(chainId, "43113");
-    assertStringsEqual(txUrl, "https://testnet.snowtrace.io/tx/0x9243890b844219accefd8798271052f5a056453ec18984a56e81c92921330d54");
-    assertStringsEqual(accUrl, "https://testnet.snowtrace.io/address/0xa664325f36Ec33E66323fe2620AF3f2294b2Ef3A");
+    assertStringsEqual(chainId, "998");
+    assertStringsEqual(txUrl, "https://app.hyperliquid-testnet.xyz/explorer/tx0x557ed1b7d620f69161f90423be0d1e0000ae1eff8e61ec9c363fbcf6a5d45f7d");
+    assertStringsEqual(accUrl, "https://app.hyperliquid-testnet.xyz/explorer/address/0x9db9cd2b0e40c139b487752ee13586956fbe626a");
 }
